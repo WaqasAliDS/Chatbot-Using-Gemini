@@ -49,8 +49,3 @@ if st.button("Send") and user_input:
     # Clear the input after sending the message
     #st.text_input("You: ", "", key="input_clear")
 
-if st.button("Reset Chat"):
-    # Clear conversation and reset state
-    st.session_state.conversation_context = ""
-    st.session_state.user_name = None
-    st.experimental_rerun()
